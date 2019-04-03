@@ -21,6 +21,10 @@
 gsutil mb gs://$ID
 
 # Copy script into the bucket and set publick permissions
+
+# gsutil cp [SOURCE] gs://[BUCKET_NAME]
+gsutil cp resources-install-web.sh gs://$ID
+
 # gsutil acl ch -u AllUsers:R gs://[BUCKET_NAME]/[OBJECT_NAME]
 gsutil acl ch -u AllUsers:R gs://$ID/resources-install-web.sh
 
